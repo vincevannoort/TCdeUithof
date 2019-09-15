@@ -8,11 +8,7 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <h3 class="tc-subtitle"><?php if ( function_exists('yoast_breadcrumb') )  yoast_breadcrumb( '<span class="tc-breadcrumbs">','</span>' ); ?></h2>
             <h2 class="tc-title"><?php the_title(); ?></h2>
-            <?php if ( !empty( get_the_content() ) ): ?>
-              <?php the_content(); ?>
-            <?php else: ?>
-              Deze pagina is nog leeg en moet worden gevuld met content.
-            <?php endif; ?>
+            <?php the_content(); ?>
             <?php endwhile; endif; ?>
           </div>
         </div>
