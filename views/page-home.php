@@ -49,7 +49,7 @@
   </div>
 </section>
 
-<section class="section section--grey section--rounded">
+<!-- <section class="section section--grey section--rounded">
   <div class="container">
     <div class="columns">
       <div class="column">
@@ -62,7 +62,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="section">
   <div class="container">

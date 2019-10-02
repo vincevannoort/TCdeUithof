@@ -21,7 +21,7 @@
             <h2 class="tc-title">Informatie</h2>
             <table>
               <tr><td>Start:</td><td><?= $EM_Event->start(); ?></td></tr>
-              <tr><td>Eind:</td><td><?= $EM_Event->start(); ?></td></tr>
+              <tr><td>Eind:</td><td><?= $EM_Event->end(); ?></td></tr>
               <tr><td>Locatie:</td><td><?= $EM_Event->get_location()->name; ?></td></tr>
               <tr><td>Adres:</td><td><?= $EM_Event->get_location()->address; ?></td></tr>
               <tr><td>Stad:</td><td><?= $EM_Event->get_location()->town; ?></td></tr>

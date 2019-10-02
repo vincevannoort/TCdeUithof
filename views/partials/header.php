@@ -10,8 +10,15 @@
   <header class="tc-header">
     <section class="section section--no-padding">
         <div class="container">
-          <a href="/" class="tc-header__logo">
+          <a href="<?php get_site_url(); ?>" class="tc-header__logo">
             <img class="tc-header__logo__image" src="/wp-content/themes/tcdeuithof-redesign/images/logo.png" alt="TC de Uithof logo">
+          </a>
+          <a href="#" class="tc-header__links__mobile__open">
+            <div class="tc-header__links__mobile__open__icon">
+              <span class="line line-1"></span>
+              <span class="line line-2"></span>
+              <span class="line line-3"></span>
+            </div>
           </a>
           <div class="tc-header__links">
             <?php wp_nav_menu( array( 'theme_location' => 'header_menu_left' ) ); ?>
@@ -38,10 +45,11 @@
         </section>
       </div>
     <?php endwhile; else: ?>
-    background image
-      <?php $background_image = get_the_post_thumbnail_url();
-      if (!$background_image) $background_image = '/wp-content/uploads/2019/04/44397628872_b1c9fd93b3_o.jpg';
+      <?php 
+        $background_image = get_the_post_thumbnail_url();
+        if (!$background_image) $background_image = '/wp-content/themes/tcdeuithof-redesign/images/main.jpg';
       ?>
-      <div class="tc-slider__slide" style="background-image: url('<?= $background_image; ?>');"></div>
+      <div class="tc-slider__slide tc-slider__slide--standard-image" style="background-image: url('<?= $background_image; ?>');">
+      </div>
     <?php endif; ?>
   </section>
