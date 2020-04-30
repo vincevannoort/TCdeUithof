@@ -14,7 +14,7 @@
   "dependencies": {
     "bulma": "^0.7.4",
     "cross-env": "^5.2.0",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "laravel-mix": "^4.0.15",
     "minireset.css": "^0.0.4",
     "slick-carousel": "^1.8.1"
